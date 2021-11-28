@@ -7,24 +7,66 @@
 </head>
 <body>
     <ul class="topnav">
-        <li><a class="active" href="index.html">Index</a> 
+        <li><a class="active" href="index.html">Home</a> 
         <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="about.html">About</a></li>
     </ul>
 <section>
 <img src="contact-banner.jpg" alt="contact" style="width: 100%">
-<h4>Please feel free to contact me if you have any enquiries</h4>
-<h4>I look forward to hearing from you. Thank you.</h4>
-<p> here's my contact details:</p>
-<h3>Contact: 86723500</h3>
-<h3>Email:</h3>
-<h3>minteck11@gmail.com</h3>
-<h3>minteck111@hotmail.com</h3>
+<section class="flex-container">
+<section class="flex-item-left"><h3>Please feel free to contact me if you have any enquiries</h3></section>
+<section class="flex-item-right"><h3>I look forward to hearing from you. Thank you.</h3></section>
+<section class="flex-item-left"><h3>Contact: 86723500</h3></section>
+<section class="flex-item-right"><h3>Email:</h3></section>
+<section class="flex-item-left"><h3>minteck11@gmail.com</h3></section>
+<section class="flex-item-right"><h3>minteck111@hotmail.com</h3></section>
+</section>
 </section>
 <section>
 <h1>Contact Form</h1>
 <p>Please fill in this form to get in touch with me. Thank you.</p>
+</section>
+<section class="container">
+<form action="mailto:minteck11@gmail.com">
+    <section class="row">
+        <section class="col-25">
+            <label for="name">Name:</label>
+    </section>
+        <section class="col-75">
+            <input type="text" id="name" name="Name" placeholder="Please enter your name." required>
+    </section>
+</section>
+    <section class="row">
+    <section class="col-25">
+        <label for="emailAddr">Email Address:</label>
+</section>
+    <section class="col-75">
+        <input type="text" id="emailAddr" name="emailAddress" placeholder="Please enter your email." required>
+</section>
+</section>
+<section class="row">
+    <section class="col-25">
+        <label for="contact">ContactNo:</label>
+</section>
+    <section class="col-75">
+        <input type="text" id="contact" name="ContactNo" placeholder="Please enter your contact number." required>
+</section>
+</section>
+<section class="row">
+    <section class="col-25">
+        <label for="enquiries">Enquiries:</label>
+</section>
+    <section class="col-75">
+        <textarea id="enquiries" name="enquiries" placeholder="Please enter your message or enquiries if you have any." style="height: 200px"></textarea>
+</section>
+</section>
+<br>
+  <section class="row">
+    <input name = "submit" type="submit" value="Submit">
+  </section>
+</form>
+</section>
 </section>
 </body>
 <footer class="color">
