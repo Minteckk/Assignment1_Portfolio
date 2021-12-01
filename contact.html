@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Index</title>
+<title>Contact</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
+    <script src="js/script.js"></script>
     <ul class="topnav">
-        <li><a class="active" href="index.html">Home</a> 
+        <li><a href="index.html">Home</a> 
         <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a class="active" href="#contact">Contact</a></li>
         <li><a href="about.html">About</a></li>
     </ul>
 <section>
-<img src="contact-banner.jpg" alt="contact" style="width: 100%">
+<img src="images/contact-banner.jpg" alt="contact" style="width: 100%">
 <section class="flex-container">
 <section class="flex-item-left"><h3>Please feel free to contact me if you have any enquiries</h3></section>
 <section class="flex-item-right"><h3>I look forward to hearing from you. Thank you.</h3></section>
@@ -23,18 +24,24 @@
 <section class="flex-item-right"><h3>minteck111@hotmail.com</h3></section>
 </section>
 </section>
+<section class="flex-container">
+    <section class="flex-item-left">Get in touch with me in <a href="https://www.linkedin.com/in/min-teck-ho/" target="_blank">
+    <button>Linkedin</button></a></section>
+    <section class="flex-item-right"><button type="button" id="btn29" onclick = "FormAcknowledgement()">Fill in the 
+    Form below to Email Me<p id = "text30"></p></button></section>
+</section>
 <section>
 <h1>Contact Form</h1>
-<p>Please fill in this form to get in touch with me. Thank you.</p>
+<p>Please fill in this form to get in touch with me or to email me. Thank you.</p>
 </section>
 <section class="container">
-<form action="mailto:minteck11@gmail.com">
+<form onsubmit="return validateForm()" name="contactform" action="mailto:minteck11@gmail.com">
     <section class="row">
         <section class="col-25">
             <label for="name">Name:</label>
     </section>
         <section class="col-75">
-            <input type="text" id="name" name="Name" placeholder="Please enter your name." required>
+            <input type="text" id="name" name="Name" placeholder="Please enter your name." onfocus="infocus(this)" onfocusout="outfocus()" required>
     </section>
 </section>
     <section class="row">
@@ -42,32 +49,33 @@
         <label for="emailAddr">Email Address:</label>
 </section>
     <section class="col-75">
-        <input type="text" id="emailAddr" name="emailAddress" placeholder="Please enter your email." required>
+        <input type="text" id="emailAddr" name="emailAddress" placeholder="Please enter your email." onfocus="infocus(this)" onfocusout="outfocusEmail()"  required>
 </section>
 </section>
-<section class="row">
+    <section class="row">
     <section class="col-25">
         <label for="contact">ContactNo:</label>
 </section>
     <section class="col-75">
-        <input type="text" id="contact" name="ContactNo" placeholder="Please enter your contact number." required>
+        <input type="text" id="contact" name="ContactNo" placeholder="Please enter your contact number." onfocus="infocus(this)" onfocusout="outfocusContact()" required>
 </section>
 </section>
-<section class="row">
+    <section class="row">
     <section class="col-25">
         <label for="enquiries">Enquiries:</label>
 </section>
     <section class="col-75">
-        <textarea id="enquiries" name="enquiries" placeholder="Please enter your message or enquiries if you have any." style="height: 200px"></textarea>
+        <textarea id="enquiries" name="enquiries" placeholder="Please enter your message or enquiries if you have any." style="height: 200px" onfocus="infocus(this)" onfocusout="outfocustextarea()"></textarea>
 </section>
 </section>
 <br>
-  <section class="row">
-    <input name = "submit" type="submit" value="Submit">
-  </section>
+    <section class="row">
+        <input name = "submit" type="submit" value="Submit" class="button"  id = "submit" onSubmit = "validateForm()" , onsubmit="FormAcknowledgement()" onfocus="infocus(this)"><p id="text30"></p>
+</section>
 </form>
 </section>
 </section>
+<a href="contact.html" button class="btn" id="btn32" onmouseover="Hoverin()" onmouseout="Hoverout()">Back To Top</a>
 </body>
 <footer class="color">
     <p>2021 &COPY; All Rights Reserved Min Teck's Portfolio</p>
