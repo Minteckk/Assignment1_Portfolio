@@ -1,19 +1,172 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Index</title>
+<title>About</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
+    <script src="js/script.js"></script>
     <ul class="topnav">
-        <li><a class="active" href="index.html">Index</a> 
+        <li><a href="index.html">Home</a> 
         <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a class="active" href="#about">About</a></li>
     </ul>
 <section>
-<img src="aboutme.jpg" alt="aboutme" style="width: 100%;">
+<img src="images/aboutme.jpg" alt="aboutme" style="width: 100%;">
 </section>
+
+<h1>Information About Me</h1>
+<section class="flex-container">
+    <section class="flex-item-left">I am aspiring to be a web developer in the future. I would like to use the knowledge and
+skills that I learned to develop websites for companies. I am keen on upskiling myself with new knowledge and skills to 
+help expand my knowledge on coding. So that I can improve my knowledge in coding and become a better programmer. I will 
+complete the tasks assigned to the best of my ability. I believe I will be able to contribute success to your company.
+</section>
+</section>
+<h2> Education</h2>
+<section class="flex-container">
+    <section class="flex-item-left">Ngee Ann Polytechnic:</section>
+    <section class="flex-item-right">Information Technology</section>
+    <section class="flex-item-left">CCA: Overflow</section>
+    <section class="flex-item-right">Activities Attended: <button type="button" onclick = "ShowNPCCActivities()" id="btn1">Click me!</button><p id = "text2"></p></section>
+</section>
+<section class="flex-container">
+    <section class="flex-item-left">ITE College West:</section>
+    <section class="flex-item-right">Web Applications</section>
+    <section class="flex-item-right">Achievement Attained: <button type="button" onclick = "WAAchievementAttained()" id="btn34">Click me!</button><p id = "text35"></p></section>
+    <section class="flex-item-left">CCA: ACE</section>
+    <section class="flex-item-right">Activities Attended: <button type="button" onclick="ShowACEActivites()" id="btn2">Click me!</button><p id = "text3"></p></section>
+    </section>
+<section class="flex-container">
+        <section class="flex-item-left">Zhenghua Secondary</section>
+        <section class="flex-item-left">Represented my school in the EBS competition together with my team.</section>
+        <section class="flex-item-right">Appointed as class Vice-chairman in 2018</section>
+        <section class="flex-item-left">CCA: ART</section>
+        <section class="flex-item-right">Activites Attended: <button type="button" onclick="showSecSchActivities()" id="btn3">Click me!</button><p id = "text4"></p></section>
+        <section class="flex-item-left">Competition participated: <button type="button" onclick="showCompetition()" id="btn4">Click me!</button><p id = "text5"></p></section>
+        <section class="flex-item-right">Achievement Attained: School Values Awards (2018), Best in Basic Chinese and Elements of Business Skills, Certificate of Achievement (EBS Competiton)</section>
+</section>    
+
+<h2>Skills</h2>
+<section class="flex-container">
+    <section class="flex-item-left">HTML</section>
+        <section class="flex-item-right">Level of Prociency: </section>
+        <section class="flex-item-left"><button type="button" onclick="HTMLProciency()" id="btn5">Click me!</button><p id="text6"></p></section>
+        <section class="flex-item-left">CSS</section>
+        <section class="flex-item-right">Level of Prociency: </section>
+        <section class="flex-item-left"><button type="button" onclick="CSSProciency()" id="btn6">Click me!</button><p id="text7"></p></section>
+        <section class="flex-item-left">Javascript</section>
+        <section class="flex-item-right">Level of Prociency: </section>
+        <section class="flex-item-left"><button type="button" onclick="JavascriptProciency()" id="btn7">Click me!</button><p id="text8"></p></section>       
+</section> 
+
+<section class="flex-container">
+    <section class="flex-item-left">PHP</section>
+    <section class="flex-item-right">Level of Prociency: </section>
+    <section class="flex-item-left"><button type="button" onclick="PHPProciency()" id="btn8">Click me!</button><p id="text9"></p></section>
+    <section class="flex-item-left">jQuery</section>
+    <section class="flex-item-right">Level of Prociency: </section>
+    <section class="flex-item-left"><button type="button" onclick="jQueryProciency()" id="btn9">Click me!</button><p id="text10"></p></section>
+    <section class="flex-item-left">jQuery Mobile</section>
+    <section class="flex-item-right">Level of Prociency: </section>
+    <section class="flex-item-left"><button type="button" onclick="jQueryMobileProciency()" id="btn10">Click me!</button><p id="text11"></p></section>   
+    </section>
+
+<section class="flex-container">     
+        <section class="flex-item-left">Python</section>
+        <section class="flex-item-right">Level of Prociency: </section>
+        <section class="flex-item-left"><button type="button" onclick="PythonProciency()" id="btn11">Click me!</button><p id="text12"></p></section>   
+        <section class="flex-item-left">MySQL</section>
+        <section class="flex-item-right">Level of Prociency: </section>
+        <section class="flex-item-left"><button type="button" onclick="MySQLProciency()" id="btn12">Click me!</button><p id="text13"></p></section>   
+        <section class="flex-item-left">Wordpress</section>
+        <section class="flex-item-right">Level of Prociency: </section>
+        <section class="flex-item-left"><button type="button" onclick="WordpressProciency()" id="btn13">Click me!</button><p id="text14"></p></section>
+</section>
+
+<section class="flex-container">
+    <section class="flex-item-left">WooCommerce</section>
+    <section class="flex-item-right">Level of Prociency: </section>
+    <section class="flex-item-left"><button type="button" onclick="WooCommerceProciency()" id="btn14">Click me!</button><p id="text15"></p></section>
+    <section class="flex-item-left">Web Dev</section>
+    <section class="flex-item-right">Level of Prociency: </section>
+    <section class="flex-item-left"><button type="button" onclick="WebDevProciency()" id="btn15">Click me!</button><p id="text16"></p></section>
+    <section class="flex-item-left">Responsive Web</section>
+    <section class="flex-item-right">Level of Prociency: </section>
+    <section class="flex-item-left"><button type="button" onclick="ResponsiveWebProciency()" id="btn16">Click me!</button><p id="text17"></p></section>
+    </section>
+    
+<section class="flex-container">
+        <section class="flex-item-left">TypeScript</section>
+        <section class="flex-item-right">Level of Prociency: </section>
+        <section class="flex-item-left"><button type="button" onclick="TypeScriptProciency()" id="btn17">Click me!</button><p id="text18"></p></section>
+        <section class="flex-item-left">C#</section>
+        <section class="flex-item-right">Level of Prociency: </section>
+        <section class="flex-item-left"><button type="button" onclick="CSharpProciency()" id="btn18">Click me!</button><p id="text19"></p></section>
+        <section class="flex-item-left">UI/UX</section>
+        <section class="flex-item-right">Level of Prociency: </section>
+        <section class="flex-item-left"><button type="button" onclick="UIUXProciency()" id="btn19">Click me!</button><p id="text20"></p></section>
+</section>
+
+<section class="flex-container">
+<section class="flex-item-left">Angular 8</section>
+        <section class="flex-item-right">Level of Prociency: </section>
+        <section class="flex-item-left"><button type="button" onclick="AngularProciency()" id="btn20">Click me!</button><p id="text21"></p></section>
+</section>
+
+<h2>Software Prociency</h2>
+        <section class="flex-container">
+            <section class="flex-item-left">Dreamweaver</section>
+            <section class="flex-item-right">Level of Prociency: </section>
+            <section class="flex-item-left"><button type="button" onclick="DreamweaverProciency()" id="btn21">Click me!</button><p id="text22"></p></section>
+            <section class="flex-item-right">Photoshop</section>
+            <section class="flex-item-left">Level of Prociency: </section>
+            <section class="flex-item-right"><button type="button" onclick="PhotoshopProciency()" id="btn22">Click me!</button><p id="text23"></p></section>
+            <section class="flex-item-left">Illustrator</section>
+            <section class="flex-item-right">Level of Prociency: </section>
+            <section class="flex-item-left"><button type="button" onclick="IllustratorProciency()" id="btn23">Click me!</button><p id="text24"></p></section>
+        </section>
+
+        <section class="flex-container">
+            <section class="flex-item-left">Animate</section>
+            <section class="flex-item-right">Level of Prociency: </section>
+            <section class="flex-item-left"><button type="button" onclick="AnimateProciency()" id="btn24">Click me!</button><p id="text25"></p></section>
+            <section class="flex-item-left">InDesign</section>
+            <section class="flex-item-right">Level of Prociency: </section>
+            <section class="flex-item-left"><button type="button" onclick="InDesignProciency()" id="btn25">Click me!</button><p id="text26"></p></section>
+            <section class="flex-item-left">MS Office</section>
+            <section class="flex-item-right">Level of Prociency: </section>
+            <section class="flex-item-left"><button type="button" onclick="OfficeProciency()" id="btn26">Click me!</button><p id="text27"></p></section>
+        </section>
+
+        <section class="flex-container">
+        <section class="flex-item-left">VS Code</section>
+            <section class="flex-item-right">Level of Prociency: </section>
+            <section class="flex-item-left"><button type="button" onclick="VSCodeProciency()" id="btn27">Click me!</button><p id="text28"></p></section>
+            <section class="flex-item-left">Visual Studio</section>
+            <section class="flex-item-right">Level of Prociency: </section>
+            <section class="flex-item-left"><button type="button" onclick="VSProciency()" id="btn28">Click me!</button><p id="text29"></p></section>
+        </section>
+
+        <h2>Interests</h2>
+        <h3>Coding</h3>
+        <section class="flex-container">
+            <section class="flex-item-left"><img src="images/Personal_Proj.JPG" alt="personalproj" width="100%"></section>
+            <section class="flex-item-right"><img src="images/Personal_Proj_Settings.JPG" alt="personalproj" width="100%"></section>
+        </section>
+        <section class="flex-container">
+            <section class="flex-item-left"><img src="images/Personal_Proj_contact.JPG" alt="personalproj" width="100%"></section>
+            <section class="flex-item-right"><img src="images/Personal_Proj_Giraffee.JPG" alt="personalproj" width="100%"></section>
+        </section>
+        <section class="flex-container">
+            <section class="flex-item-left"><img src="images/Personal_Proj_Panda.JPG" alt="personalproj" width="100%"></section>
+            <section class="flex-item-right"><img src="images/Personal_Proj_Zebra.JPG" alt="personalproj" width="100%"></section>
+        </section>
+        <section class="flex-container">
+        <section class="flex-item-left">This is a wildlife website that I created using HTML, CSS, jQuery Mobile.</section>
+    </section> 
+<a href="about.html" button class="btn" id="btn32" onmouseover="Hoverin()" onmouseout="Hoverout()">Back To Top</a>
 </body>
 </html>
