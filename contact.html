@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <title>Contact</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
 <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
@@ -14,6 +15,7 @@
         <li><a href="about.html">About</a></li>
     </ul>
 <section>
+    <section class="parallax">
 <img src="images/contact-banner.jpg" alt="contact" style="width: 100%">
 <section class="flex-container">
 <section class="flex-item-left"><h3>Please feel free to contact me if you have any enquiries</h3></section>
@@ -23,12 +25,18 @@
 <section class="flex-item-left"><h3>minteck11@gmail.com</h3></section>
 <section class="flex-item-right"><h3>minteck111@hotmail.com</h3></section>
 </section>
-</section>
 <section class="flex-container">
-    <section class="flex-item-left">Get in touch with me in <a href="https://www.linkedin.com/in/min-teck-ho/" target="_blank">
-    <button>Linkedin</button></a></section>
-    <section class="flex-item-right"><button type="button" id="btn29" onclick = "FormAcknowledgement()">Fill in the 
-    Form below to Email Me<p id = "text30"></p></button></section>
+    <section class="card">
+    <section class="flex-item-left"><img src="images/personalpic.jpg" alt="personal-image" style="width: 100%;"></section>
+    <h2>Ho Min Teck</h2>
+    <section class="flex-item-left"><p class="title">Student</p></section>
+    <section class="flex-item-right"><p>Ngee Ann Poly</p></section>
+    <section class="flex-item-left">Get in touch with me in <a href="https://www.linkedin.com/in/min-teck-ho/" target="_blank" 
+    class="btn">Linkedin</a></section>
+    </section>
+    
+    <section class="flex-item-right"><button type="button" id="btn29" onclick = "FormAcknowledgement()" class="btn">Fill in the 
+    Form below to Email Me</button><p id = "text30"></p></section>
 </section>
 <section>
 <h1>Contact Form</h1>
@@ -70,14 +78,15 @@
 </section>
 <br>
     <section class="row">
-        <input name = "submit" type="submit" value="Submit" class="button"  id = "submit" onSubmit = "validateForm()" , onsubmit="FormAcknowledgement()" onfocus="infocus(this)"><p id="text30"></p>
+        <input name = "submit" type="submit" value="Submit" class="button"  id = "submit" onSubmit = "validateForm(),FormAcknowledgement()" onfocus="infocus(this)">
 </section>
 </form>
 </section>
 </section>
-<a href="contact.html" button class="btn" id="btn32" onmouseover="Hoverin()" onmouseout="Hoverout()">Back To Top</a>
-</body>
+</section>
+<a href="contact.html" class="btn" id="btn32" onmouseover="Hoverin()" onmouseout="Hoverout()">Back To Top</a>
 <footer class="color">
     <p>2021 &COPY; All Rights Reserved Min Teck's Portfolio</p>
 </footer>
+</body>
 </html>
