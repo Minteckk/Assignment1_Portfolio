@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <title>Portfolio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
 <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
@@ -13,6 +14,8 @@
         <li><a href="contact.html">Contact</a></li>
         <li><a href="about.html">About</a></li>
     </ul>
+
+<section class="parallax"> 
 <img src = "images/portfolio-banner.jpg" alt= "portfolio-banner" style="width: 100%">
 <section>
 <h1> IT Portfolio</h1>
@@ -21,7 +24,8 @@
 
 <h2>Cyber Security Assignment on Phishing Scams</h2>
 <section class="flex-container">
-    <section class="flex-item-left"><img src="images/NPAssignment/ITAssignment.JPG" alt="assignment" class="img" style="width: 100%;"></section>
+    <section class="flex-item-left"><img src="images/NPAssignment/ITAssignment.JPG" alt="assignment" class="img" style="width: 100%;">
+    </section>
     <section class="flex-item-right">Role in this Assignment: Team Leader</section>
     <section class="flex-item-left">Assigned tasks to my Team Members</section>
     <section class="flex-item-right">Did Introduction and Learning Objectives</section>
@@ -33,10 +37,14 @@
 </section>
 
 <h2>Data Science Assignment</h2>
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <div id="caption"></div>
+  </div>
 <section class="flex-container">
     <section class="flex-item-left">
-    <a target="_blank" href="images/NPAssignment/dashboard_big.JPG"><img src="images/NPAssignment/dashboard.jpg" alt="DataScience" class="img" width="600" height="400">
-    </a>
+    <a href="images/NPAssignment/dashboard_big.JPG" target="_blank">
+    <img src="images/NPAssignment/dashboard.jpg" alt="DataScience" class="img" width="600" height="400" id="myImg"></a>
     </section>
     <section class="flex-item-right">
     <a target="_blank" href="images/NPAssignment/employerRep.JPG"><img src="images/NPAssignment/employerRep.JPG" alt="DataScience" class="img" width="600" height="400">
@@ -50,14 +58,14 @@
     <a target="_blank" href="images/NPAssignment/employerRep.JPG"><img src="images/NPAssignment/employerRep.JPG" alt="DS" class="img" width="600" height="400">
     </a>
     </section>
-    <section class="flex-item-left"><button type = "button" onclick = displayText() onmouseover="onHover()" onmouseout="onHoverout()" id="myButton">Find out more</button><p id = "text"></p>
+    <section class="flex-item-left"><button type = "button" onclick = displayText() onmouseover="onHover()" onmouseout="onHoverout()" id="myButton" class="btn">Find out more</button><p id = "text"></p>
     </section>
 
     </section>
 
 <h2>Design Principles Assignment 1 on Redesigning an App Logo</h2>
 <section class="flex-container">
-    <section class="flex-item-left"><img src="images/NPAssignment/DPASG1.jpg" class="image" alt="DPassignment"></section>
+    <section class="flex-item-left"><img src="images/NPAssignment/DPASG1.jpg" class="image" alt="DPassignment" onmouseover="mouseOver()" id="img3"></section>
     <section class="flex-item-right">Redesigned Signal App Logo.</section>
     <section class="flex-item-left"> Design Rationale: Signal App Icon :
     <section class="flex-item-right">The S in the textbox represent Signal.
@@ -85,7 +93,7 @@
 
 <h2>DP Assignment 3 on Designing a Infographics</h2>
 <section class="flex-container">
-    <section class="flex-item-left"><a href="images/NPAssignment/DPASG3.jpg">
+    <section class="flex-item-left"><a href="images/NPAssignment/DPASG3.jpg" target="_blank">
     <img src="images/NPAssignment/DPASG3_small.jpg" alt="assignment" class="thumbnailImg" style="width: 100px;"></a></section>
     <section class="flex-item-right">Created a Infographics for Signal</section>
     <section class="flex-item-left">Created with Adobe Photoshop</section>
@@ -95,7 +103,7 @@
     which is suitable and important for a messaging app. 
     I included the ratings score of Signal on both Google Play and iOS for the user to know whatever the app has a good rating or not.
     I also included some good reviews from the users to promote the app 
-    I included the section on “why use Signal”? to promote the app and provides the users with two reasons on why 
+    I included the section on why use Signal to promote the app and provides the users with two reasons on why 
     they should consider using signal.
     I decided to incorporate the feedback that I received and 
     added rectangle boxes to organise and break the different contents
@@ -105,7 +113,6 @@
     </section>
 <h1> Web Portfolio</h1>
 <p> Below are all the works that I have done during the duration of my Web Applications course in ITE</p>
-</section>
 <section style="text-align:center">
     <video width="450" class="video" id="portfoliovideo" controls>
     <source src="videos/Portfolio_showcase.mp4" type="video/mp4" style="width: 100%;">
@@ -136,7 +143,7 @@
 </section>
 <section class = "flex-container">
     <section class="flex-item-left"><button type="button" onclick="WDFProjectDesc()" id="myButton2" onmouseover="onHover()" 
-    onmouseout="onHoverout()">
+    onmouseout="onHoverout()" class="btn">
     Click Me to read more!</button><p id = "desc1"></p></section>
 </section>
 
@@ -160,7 +167,7 @@
 </section>
 <section class="flex-container">
     <section class="flex-item-right"><button type="button" onclick="UIUXProjectDesc()" id="myButton3" onmouseover="onHover()" 
-        onmouseout="onHoverout()">
+        onmouseout="onHoverout()" class="btn">
         Click Me to read more!</button><p id = "desc2"></p></section>
 </section>
 
@@ -194,9 +201,8 @@
     <section class="flex-container">
     <section class="flex-item-left">
         <button type="button" onclick="ProgrammingProjectDesc()" id="myButton4" onmouseover="onHover()" 
-        onmouseout="onHoverout()">
+        onmouseout="onHoverout()" class="btn">
         Click Me to read more!</button><p id = "desc3"></p></section> 
-    </section>
     </section>
 
 <h2>Programming - Javascript Mobile bill calculator</h2>
@@ -205,7 +211,7 @@
 </section>
 <section class="flex-container">
         <section class="flex-item-left"><button type="button" onclick="ProgrammingAssignmentDesc()" id="myButton5" onmouseover="onHover()" 
-        onmouseout="onHoverout()">
+        onmouseout="onHoverout()" class="btn">
         Click Me to read more!</button><p id = "desc4"></p></section> 
 </section>
 
@@ -234,7 +240,7 @@
 </section>
 <section class="flex-container">
     <section class="flex-item-left"><button type="button" onclick="DigitalPublishDesc()" id="myButton6" onmouseover="onHover()" 
-        onmouseout="onHoverout()">
+        onmouseout="onHoverout()" class="btn">
         Click Me to read more!</button><p id = "desc5"></p></section> 
 </section>
 
@@ -256,7 +262,7 @@
 </section>
 <section class="flex-container">
     <section class="flex-item-left"><button type="button" onclick="CMSAssignmentDesc()" id="myButton7" onmouseover="onHover()" 
-        onmouseout="onHoverout()">
+        onmouseout="onHoverout()" class="btn">
         Click Me to read more!</button><p id = "desc6"></p></section> 
 </section>
 
@@ -284,7 +290,7 @@
 </section>
 <section class="flex-container">
     <section class="flex-item-left"><button type="button" onclick="CMSProjectDesc()" id="myButton8" onmouseover="onHover()" 
-        onmouseout="onHoverout()">
+        onmouseout="onHoverout()" class="btn">
         Click Me to read more!</button><p id = "desc7"></p></section> 
 </section>
 
@@ -296,8 +302,7 @@
         <img src="images/ITEProjects/WebsiteDev_project_small.jpg" alt="image" style="width: 100%;"></section>
         </a>
         <a target="_blank" href="images/ITEProjects/WebsiteDev_project2.JPG">
-        <section class="flex-item-right"></section><img src="images/ITEProjects/WebsiteDev_project2_small.jpg" alt="image" style="width: 100%;"></section>
-        </a>
+        <section class="flex-item-right"><img src="images/ITEProjects/WebsiteDev_project2_small.jpg" alt="image" style="width: 100%;"></section></a>
         <a target="_blank" href="images/ITEProjects/WebsiteDev_project3.JPG">
         <section class="flex-item-left">
         <img src="images/ITEProjects/WebsiteDev_project3_small.jpg" alt="image" style="width: 100%;"></section>
@@ -309,7 +314,7 @@
 </section>
 <section class="flex-container">
     <section class="flex-item-left"><button type="button" onclick="WebsiteDevProjDesc()" id="myButton9" onmouseover="onHover()" 
-        onmouseout="onHoverout()">
+        onmouseout="onHoverout()" class="btn">
         Click Me to read more!</button><p id = "desc8"></p></section> 
 </section>
 
@@ -356,9 +361,8 @@
 
 <section class="flex-container">
     <section class="flex-item-left"><button type="button" onclick="RIAProjDesc()" id="myButton10" onmouseover="onHover()" 
-        onmouseout="onHoverout()">
+        onmouseout="onHoverout()" class="btn">
         Click Me to read more!</button><p id = "desc9"></p></section> </section>
-</section>
 
 <h2>Mobile Web Development Projects</h2>
 <h3>Responsive Fashion webpage & Car Dealer Projects</h3>
@@ -372,12 +376,13 @@
         </section>
     <section class="flex-container">
         <section class="flex-item-left"><button type="button" onclick="MobileWebProjDesc()" id="myButton11" onmouseover="onHover()" 
-            onmouseout="onHoverout()">
+            onmouseout="onHoverout()" class="btn">
             Click Me to read more!</button><p id = "desc10"></p></section>
         </section>
-<a href="portfolio.html" button class="btn" id="btn32" onmouseover="Hoverin()" onmouseout="Hoverout()">Back To Top</a>
-</body>
+    </section>
+<a href="portfolio.html" class="btn" id="btn32" onmouseover="Hoverin()" onmouseout="Hoverout()">Back To Top</a>
 <footer class="color">
     <p>2021 &COPY; All Rights Reserved Min Teck's Portfolio</p>
 </footer>
+</body>
 </html>
